@@ -64,7 +64,7 @@ const App = () => {
     <div className='page'>
       <div className='clicker'>
         <h1> Masz zebrane {cookiescount} ciasteczek</h1>
-        <img src={cookie} className='cookie-image' onClick={clickCookie}></img> 
+        <img src={cookie} className='cookie-image'  alt="ciasteczko" onClick={clickCookie}></img> 
       </div>
       <div className='shop'>
         <div className='products' onClick={upgrade0}>
