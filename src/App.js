@@ -22,7 +22,7 @@ const App = () => {
   const upgrade0 = () => {
 
     if (cookiescount >= 20){
-    setCookiesCount(cookiescount-20);
+    setCookiesCount(cookiescount=>cookiescount-20);
     setCookiesPerClick(cookiesPerClick + 1);
     setBoughtUpgrade0(boughtUpgrade0+1);
     }
@@ -32,7 +32,7 @@ const App = () => {
   const upgrade1 = () => {
 
     if (cookiescount >= 35){
-      setCookiesCount(cookiescount-35);
+      setCookiesCount(cookiescount=>cookiescount-35);
       setCookiesPerClick(cookiesPerClick + 3);
       setBoughtUpgrade1(boughtUpgrade1+1);
     }
@@ -41,7 +41,7 @@ const App = () => {
   const upgrade2 = () => {
 
     if (cookiescount >= 75){
-      setCookiesCount(cookiescount-75);
+      setCookiesCount(cookiescount=>cookiescount-75);
       setCookiesPerClick(cookiesPerClick + 5);
       setBoughtUpgrade2(boughtUpgrade2+1);
     }
@@ -51,7 +51,7 @@ const App = () => {
   const upgrade3 = () => {
 
     if (cookiescount >= 125){
-      setCookiesCount(cookiescount-125);
+      setCookiesCount(cookiescount=>cookiescount-125);
       setCookiesPerClick(cookiesPerClick + 20);
       setBoughtUpgrade3(boughtUpgrade3+1);
     }
